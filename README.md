@@ -76,6 +76,9 @@ Remember, this is PURELY COSMETIC! So naming here doesn't matter much. I'm just 
 
 As you can see here, I've applied the same naming convention to the CPU name as well. I've seen many configurations set the CPU name to be the full product name or a weird mix of everything combined. e.g. `Intel Core i9-14900KF` or even `24-Core Intel i9-14900KF`. I have an issue with both because the presentation of information is very un-Apple-like. Apple tends to go for simplicity and displays only the important information such as core count and the short product name. I **especially** have an issue with the latter, `24-Core Intel i9-14900KF`, because it just seems cursed not to say "Intel Core". Although Intel processors are not Apple's hardware, they are still respectful and display the full trademark name. Woo! Therefore, I have applied the same naming as Apple would have done.
 
+![Screenshot 2023-12-29 at 15 37 24](https://github.com/Richy-Z/Raptor-Lake-Refresh-Hackintosh/assets/64844585/cf292668-0b33-49f4-aaa7-1be959793cb9)
+
+
 ### PlatformInfo >> Generic
 | Name          | Type   | Value  |
 | ------------- | ------ | ------ |
@@ -84,8 +87,12 @@ As you can see here, I've applied the same naming convention to the CPU name as 
 I initially did not know that ProcessorType had to be set manually in order to apply a custom CPU name. Or, more specifically and more likely, because I have an unsupported Raptor Lake Refresh CPU, OpenCore was failing to determine a [ProcessorType](https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Apple/IndustryStandard/AppleSmBios.h) so it defaulted to `0x00`, `AppleProcessorTypeUnknown` which I assume does not support CPU renaming. Hence, macOS was showing "3.18GHz Unknown" regardless of the CPU name I was attempting to set. The unknown will always be unknown!
 
 ## 🔐 Fixing CFG Lock on ASUS TUF Gaming B760M-Plus
-UEFI Variable Protection must be disabled in the BIOS.
+❗️ **Be careful when modifying your BIOS directly. It can severely break your system!**
+
+ℹ️ UEFI Variable Protection must be disabled in the BIOS.
+
 After that, [instructions from the OpenCore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) can be followed as-is.
+
 
 In my case, `VarOffset` was `0x44`. This meant that I had to use the following command in the [Modified GRUB Shell](https://github.com/datasone/grub-mod-setup_var):
 ```grub
