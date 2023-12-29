@@ -27,6 +27,7 @@ Because of my lack of knowledge of completely unsupported systems with OpenCore 
 - Compatibility Support Module (CSM)
 - Discrete Thunderbolt Support
 - UEFI Variable Protection
+  - This doesn't have to stay disabled - only for Post-Install Configuration.
 
 ### ✅ Enable
 - VT-d and VT-x
@@ -43,6 +44,34 @@ Because of my lack of knowledge of completely unsupported systems with OpenCore 
 - ASUS AI Tweaker (BIOS Automatic Overclocking)
   - Although untested, it should not cause any problems.
   - *Where exactly is the AI in this lol? It's just a BIOS... I dont expect it to have any AI features. How would you as a BIOS Vendor even implement that, and furthermore, how would American Megatrends implement it lol?*
+
+## 👀 Enabling support for the RX 6900 XT
+To be documented.
+
+## 📜 config.plist Configuration
+To be further documented.
+### DeviceProperties >> GPU Path
+| Name      | Type   | Value                 |
+| --------- | ------ | --------------------- |
+| device-id | Data   | BF730000              |
+| model     | String | AMD Radeon RX 6900 XT |
+
+In [TylerLyczak's Guide for fixing RX 6900 XT support](https://github.com/TylerLyczak/Unsupported-6900XT-Hackintosh-Fix), the model string he set was `Radeon RX 6900 XT (XTXH)`. However, I believe that his model name didn't adhere to Apple's way of product naming.
+
+I watched [MKBHD's MacPro7,1 Unboxing Video](https://www.youtube.com/watch?v=DOPswcaSsu8) and I found out that Apple tends not to include advanced information such as the GPU variant (in our case, `(XTXH)`. Apple is always for simplicity. So I made it `AMD Radeon RX 6900 XT` as that is how Apple would present it.
+![Apple Product Naming Convention](/documentation-assets/AppleProductNamingConvention.png)
+
+Remember, this is PURELY COSMETIC! So naming here doesn't matter much. I'm just going for the ultimate Apple experience.
+
+## 🔐 Fixing CFG Lock on ASUS TUF Gaming B760M-Plus
+UEFI Variable Protection must be disabled in the BIOS.
+After that, [instructions from the OpenCore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) can be followed as-is.
+
+In my case, `VarOffset` was `0x44`. This meant that I had to use the following command in the [Modified GRUB Shell](https://github.com/datasone/grub-mod-setup_var):
+```grub
+setup_var_cv CpuSetup 0x44 0x01 0x00
+```
+The command above writes one byte of information, `0x00`, to offset `0x44` in `CpuSetup`.
 
 ## 🍉 Numelon Softworks (NSC Information)
 The contents of this GitHub repository adhere to the [Numelon Standardisation Convention](https://numelon.com/site-landing/?site=nsc.numelon.com).
