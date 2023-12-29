@@ -59,9 +59,31 @@ To be further documented.
 In [TylerLyczak's Guide for fixing RX 6900 XT support](https://github.com/TylerLyczak/Unsupported-6900XT-Hackintosh-Fix), the model string he set was `Radeon RX 6900 XT (XTXH)`. However, I believe that his model name didn't adhere to Apple's way of product naming.
 
 I watched [MKBHD's MacPro7,1 Unboxing Video](https://www.youtube.com/watch?v=DOPswcaSsu8) and I found out that Apple tends not to include advanced information such as the GPU variant (in our case, `(XTXH)`. Apple is always for simplicity. So I made it `AMD Radeon RX 6900 XT` as that is how Apple would present it.
-![Apple Product Naming Convention](/documentation-assets/AppleProductNamingConvention.png)
+![Apple Product Naming Explanation](/documentation-assets/AppleProductNamingExplanation.png)
+As you can see, Apple only includes the product name and no advanced information. The amount of VRAM is automatically appended by macOS, so we do NOT set this manually in the device model string.
+
+I've also applied the same naming convention to the processor name, see below.
 
 Remember, this is PURELY COSMETIC! So naming here doesn't matter much. I'm just going for the ultimate Apple experience.
+
+### NVRAM >> Add >> 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102
+| Name       | Type             | Value                 |
+| ---------- | ---------------- | --------------------- |
+| revcpu     | Number (Integer) | 1                     |
+| revcpuname | String           | 24-Core Intel Core i9 |
+
+**Please note:** It is recommended to not go over 20 characters for `revcpuname`. However, I do not think that it matters that much. I've gone over by 1 character to display `24-Core Intel Core i9` and it still displays everything fine without issues.
+
+As you can see here, I've applied the same naming convention to the CPU name as well. I've seen many configurations set the CPU name to be the full product name or a weird mix of everything combined. e.g. `Intel Core i9-14900KF` or even `24-Core Intel i9-14900KF`. I have an issue with both because the presentation of information is very un-Apple-like. Apple tends to go for simplicity and displays only the important information such as core count and the short product name. I **especially** have an issue with the latter, `24-Core Intel i9-14900KF`, because it just seems cursed not to say "Intel Core". Although Intel processors are not Apple's hardware, they are still respectful and display the full trademark name. Woo! Therefore, I have applied the same naming as Apple would have done.
+
+### PlatformInfo >> Generic
+| Name          | Type   | Value            |
+| ------------- | ------ | ---------------- |
+| ProcessorType | Number | `3841` or `4105` |
+
+I initially did not know that ProcessorType had to be set manually in order to apply a custom CPU name. Or, more specifically and more likely, because I have an unsupported Raptor Lake Refresh CPU, OpenCore was failing to determine a [ProcessorType](https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Apple/IndustryStandard/AppleSmBios.h) so it defaulted to `0x00`, `AppleProcessorTypeUnknown` which I assume does not support CPU renaming. Hence, macOS was showing "3.18GHz Unknown" regardless of the CPU name I was attempting to set. The unknown will always be unknown!
+
+I am currently experimenting with 3841, however I might find 4105 to be more suitable.
 
 ## 🔐 Fixing CFG Lock on ASUS TUF Gaming B760M-Plus
 UEFI Variable Protection must be disabled in the BIOS.
