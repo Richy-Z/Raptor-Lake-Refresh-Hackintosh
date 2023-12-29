@@ -13,7 +13,7 @@ Because of my lack of knowledge of completely unsupported systems with OpenCore 
 | --------- | ---- | --------------- | ---------------- | ----------------- |
 | 🌍 Motherboard | [ASUS TUF Gaming B760M-Plus](https://www.asus.com/uk/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus/techspec/) | B760 Chipset, ALC897, RTL8125 |   | Lovely motherboard! 😍 |
 | 🧠 Processor | [Intel Core i9-14900KF](https://ark.intel.com/content/www/us/en/ark/products/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz.html) | 24 Cores [(8P + 16E)](https://www.intel.com/content/www/us/en/gaming/resources/how-hybrid-design-works.html), 32 Threads| Raptor Lake is not natively supported. Advanced configuration required. | Really powerful - Outperforms M2 Ultra and M3 Max even with non-native support! 💪🏻 |
-| 👀 Graphics | [AMD Radeon RX 6900 XT Gaming Z Trio 16GB](https://www.msi.com/Graphics-Card/Radeon-RX-6900-XT-GAMING-Z-TRIO-16G/Specification) | MSI XTXH Variant | Only XTX is supported in macOS - XTXH is not. Device ID has to be spoofed. | Very powerful graphics - Outperforms above. 🤓 |
+| 👀 Graphics | [AMD Radeon RX 6900 XT Gaming Z Trio 16GB](https://www.msi.com/Graphics-Card/Radeon-RX-6900-XT-GAMING-Z-TRIO-16G/Specification) | MSI XTXH Variant | Only XTX is supported in macOS - XTXH is not. The device ID has to be spoofed. | Very powerful graphics - Outperforms above. 🤓 |
 | 💭 Memory | [Corsair Dominator Titanium RGB 64GB](https://www.corsair.com/uk/en/p/memory/cmp64gx5m4b6400c32/dominator-titanium-rgb-4x16gb-ddr5-dram-6400mt-s-cl32-intel-xmp-memory-kit-cmp64gx5m4b6400c32#tab-techspecs) | DDR5 6400MHz, 4x16GB Configuration, Intel XMP | macOS does not recognise that it is DDR5 - this is purely cosmetic and doesnt affect anything. | Lovely colours with RGB! 🌈 |
 | 💾 Storage | [WD_BLACK SN850X 2TB with Heatsink](https://www.westerndigital.com/en-gb/products/internal-drives/wd-black-sn850x-nvme-ssd?sku=WDS200T2XHE) | NVMe SSD, WD In-house controller | I'm not sure if this requires NVMeFix.kext as Apple and Western Digital go well together. | Really fast - up to 7,300MB/s. 🏃🏻💨 |
 
@@ -30,7 +30,8 @@ Because of my lack of knowledge of completely unsupported systems with OpenCore 
   - This doesn't have to stay disabled - only for Post-Install Configuration.
 
 ### ✅ Enable
-- VT-d and VT-x
+- VT-d and VT-x (The `DisableIoMapper` quirk **does not** have to be enabled. In fact, disabling VT-d or enabling `DisableIoMapper` actually causes issues.)
+  - A long time ago (almost a decade ago), when Hackintoshes were a new thing, someone said that VT-d should be disabled. This is no longer the case however and macOS actually requires it! This false piece of information has stayed with the community, however.
 - Above 4G Decoding
   - Resize BAR Support will become available - turn it on too.
 - Hyper-Threading
@@ -42,11 +43,20 @@ Because of my lack of knowledge of completely unsupported systems with OpenCore 
 - Intel XMP
   - Intel XMP does not cause issues. This can be enabled to enhance the performance of your hack.
 - ASUS AI Tweaker (BIOS Automatic Overclocking)
-  - Although untested, it should not cause any problems.
-  - *Where exactly is the AI in this lol? It's just a BIOS... I dont expect it to have any AI features. How would you as a BIOS Vendor even implement that, and furthermore, how would American Megatrends implement it lol?*
+  - For some reason, people believe that overclocking can cause issues. Whilst this may be true on supported systems where power is managed properly, we do not care because we're doing enough spoofing with the CPU already and we need CPUFriend to handle our power management nevertheless. So, maximum performance it will be!
+  - *Where exactly is the AI in this lol? It's just a BIOS... I don't expect it to have any AI features. How would you as a BIOS Vendor even implement that, and furthermore, how would American Megatrends implement it lol?*
 
 ## 👀 Enabling support for the RX 6900 XT
 To be documented.
+
+## 🧠 Fixing support for Raptor Lake (i9-14900KF)
+To be documented.
+- CPUFriend
+- Apple Industry Standard ProcessorType
+  - PlatformInfo > Generic > ProcessorType
+- CFG Lock
+- Spoofing the Processor Name and Type
+  - NVRAM >> Add >> 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102
 
 ## 📜 config.plist Configuration
 To be further documented.
