@@ -3,10 +3,12 @@ An OpenCore EFI configured for my personal Raptor Lake Refresh (Intel 14th Gener
 
 This Hackintosh is currently a fluke - I don't have much of an idea of how or why this hack even works.
 
-After I changed an unknown BIOS setting or something in config.plist, it randomly decided to boot into the macOS Installer instead of the kernel panicking. I was so relieved but also surprised that I ended up regaining faith in God and started praying - like literally...
+After I changed an unknown BIOS setting or something in config.plist, it randomly decided to boot into the macOS Installer instead of kernel panicking. I was so relieved and surprised that I ended up regaining faith in God and started praying - like literally...
 > "Thank You God for such a blessed day!"
 
-Because of my lack of knowledge of completely unsupported systems with OpenCore (I only have experience with supported configurations such as an Intel Core i7-10700KF as an example), I will not be providing in-depth explanations here before I conduct a further investigation.
+Because of my lack of knowledge on completely unsupported systems with OpenCore (I only have experience with supported configurations such as an Intel Core i7-10700KF as an example), I will not be providing in-depth explanations here before I conduct a further investigation.
+
+**⚠️⚠️ I am currently in the process of perfecting this Hackintosh. This repo will be updated later with everything that I've done, and I'll explain stuff when I create the final configuration (and learn more about it).**
 
 ## 🖥️ Specifications
 | Component | Name | Key Information | Hackintosh Notes | Hardware Comments |
