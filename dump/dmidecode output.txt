@@ -1,0 +1,931 @@
+# dmidecode 3.4a
+Scanning I/O Registry for entry point.
+SMBIOS 3.2 present.
+62 structures occupying 2555 bytes.
+Table at 0x781E7000.
+
+Handle 0x0001, DMI type 0, 26 bytes
+0000: 00 1A 01 00 01 02 00 00 03 FF 80 98 FB 77 01 00
+0010: 00 00 03 0D 10 02 FF FF 00 00
+
+BIOS Information
+	Vendor: Acidanthera
+	Version: 2020.41.1.0.0
+	Release Date: 10/05/2023
+	ROM Size: 0 MB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		Japanese floppy for NEC 9800 1.2 MB is supported (int 13h)
+		Japanese floppy for Toshiba 1.2 MB is supported (int 13h)
+		5.25"/360 kB floppy services are supported (int 13h)
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		3.5"/2.88 MB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 16.2
+
+Handle 0x0002, DMI type 1, 27 bytes
+0000: 01 1B 02 00 01 02 03 04 C8 37 B0 67 D8 06 E7 48
+0010: 84 EF 0B AA 66 18 5D A4 06 00 05
+
+System Information
+	Manufacturer: Acidanthera
+	Product Name: MacPro7,1
+	Version: 1.0
+	Serial Number: F5KK2AYSP7QM
+	UUID: {c8 37 b0 67 d8 06 e7 48 84 ef 0b aa 66 18 5d a4} (RAW)
+	UUID: 67b037c8-06d8-48e7-84ef-0baa66185da4 (SMBIOS 2.6+, preferred)
+	UUID: c837b067-d806-e748-84ef-0baa66185da4 (RFC 4122, Apple)
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: MacPro
+
+Handle 0x0003, DMI type 2, 15 bytes
+0000: 02 0F 03 00 01 02 03 04 00 09 00 04 00 0A 00
+
+Base Board Information
+	Manufacturer: Acidanthera
+	Product Name: Mac-27AD2F918AE68F61
+	Version: MacPro7,1
+	Serial Number: F5K3014054NK3F7FB
+	Asset Tag: Not Specified
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0004
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0004, DMI type 3, 22 bytes
+0000: 03 16 04 00 01 07 02 03 00 03 03 03 03 00 00 00
+0010: 00 00 01 00 00 00
+
+Chassis Information
+	Manufacturer: Acidanthera
+	Type: Tower
+	Lock: Not Present
+	Version: Mac-27AD2F918AE68F61
+	Serial Number: F5KK2AYSP7QM
+	Asset Tag: Not Specified
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: 1
+	Contained Elements: 0
+	SKU Number: Not Specified
+
+Handle 0x0080, DMI type 7, 27 bytes
+0000: 07 1B 80 00 01 80 01 00 04 00 04 20 00 20 00 00
+0010: 04 03 07 00 04 00 00 00 04 00 00
+
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Not Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 1 MB
+	Maximum Size: 1 MB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Parity
+	System Type: Instruction
+	Associativity: 8-way Set-associative
+
+Handle 0x0081, DMI type 7, 27 bytes
+0000: 07 1B 81 00 01 81 01 00 40 00 40 20 00 20 00 00
+0010: 05 05 08 00 40 00 00 00 40 00 00
+
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Not Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 16 MB
+	Maximum Size: 16 MB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Single-bit ECC
+	System Type: Unified
+	Associativity: 16-way Set-associative
+
+Handle 0x0082, DMI type 7, 27 bytes
+0000: 07 1B 82 00 01 82 01 40 82 40 82 20 00 20 00 00
+0010: 06 05 09 40 02 00 80 40 02 00 80
+
+Cache Information
+	Socket Designation: L3 Cache
+	Configuration: Enabled, Not Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 36 MB
+	Maximum Size: 36 MB
+	Supported SRAM Types:
+		Synchronous
+	Installed SRAM Type: Synchronous
+	Speed: Unknown
+	Error Correction Type: Multi-bit ECC
+	System Type: Unified
+	Associativity: 12-way Set-associative
+
+Handle 0x0083, DMI type 4, 50 bytes
+0000: 04 32 83 00 01 03 CF 02 71 06 0B 00 FF FB EB BF
+0010: 03 8E 64 00 6C 0C 6C 0C 41 40 80 00 81 00 82 00
+0020: 04 05 06 18 18 20 FC 00 CF 00 18 00 18 00 20 00
+0030: 00 00
+
+Processor Information
+	Socket Designation: LGA1700
+	Type: Central Processor
+	Family: Core i9
+	Manufacturer: Intel(R) Corporation
+	ID: 71 06 0B 00 FF FB EB BF
+	Signature: Type 0, Family 6, Model 183, Stepping 1
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		DS (Debug store)
+		ACPI (ACPI supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		SS (Self-snoop)
+		HTT (Multi-threading)
+		TM (Thermal monitor supported)
+		PBE (Pending break enabled)
+	Version: Intel(R) Core(TM) i9-14900KF
+	Voltage: 1.4 V
+	External Clock: 100 MHz
+	Max Speed: 3180 MHz
+	Current Speed: 3180 MHz
+	Status: Populated, Enabled
+	Upgrade: <OUT OF SPEC>
+	L1 Cache Handle: 0x0080
+	L2 Cache Handle: 0x0081
+	L3 Cache Handle: 0x0082
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 24
+	Core Enabled: 24
+	Thread Count: 32
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x0084, DMI type 8, 9 bytes
+0000: 08 09 84 00 01 00 02 FF 1C
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: HDMI
+	External Connector Type: Other
+	Port Type: Video Port
+
+Handle 0x0085, DMI type 8, 9 bytes
+0000: 08 09 85 00 01 00 02 FF 1C
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: DP
+	External Connector Type: Other
+	Port Type: Video Port
+
+Handle 0x0086, DMI type 8, 9 bytes
+0000: 08 09 86 00 01 00 02 12 10
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: U2_56
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0087, DMI type 8, 9 bytes
+0000: 08 09 87 00 01 00 02 12 10
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: U32G2_E56
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x0088, DMI type 8, 9 bytes
+0000: 08 09 88 00 01 00 02 23 10
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: U32G2X2_C1
+	External Connector Type: USB Type-C Receptacle
+	Port Type: USB
+
+Handle 0x0089, DMI type 8, 9 bytes
+0000: 08 09 89 00 01 00 02 23 10
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: U32G2_C3
+	External Connector Type: USB Type-C Receptacle
+	Port Type: USB
+
+Handle 0x008A, DMI type 8, 9 bytes
+0000: 08 09 8A 00 01 00 02 12 10
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: U32G1_9
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x008B, DMI type 8, 9 bytes
+0000: 08 09 8B 00 01 00 02 12 10
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: U32G1_E34
+	External Connector Type: Access Bus (USB)
+	Port Type: USB
+
+Handle 0x008C, DMI type 8, 9 bytes
+0000: 08 09 8C 00 01 00 02 0B 1F
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: Ethernet
+	External Connector Type: RJ-45
+	Port Type: Network Port
+
+Handle 0x008D, DMI type 8, 9 bytes
+0000: 08 09 8D 00 01 00 02 1F 1D
+
+Port Connector Information
+	Internal Reference Designator: None
+	Internal Connector Type: None
+	External Reference Designator: AUDIO
+	External Connector Type: Mini Jack (headphones)
+	Port Type: Audio Port
+
+Handle 0x008E, DMI type 8, 9 bytes
+0000: 08 09 8E 00 01 FF 02 00 1D
+
+Port Connector Information
+	Internal Reference Designator: AAFP
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Audio Port
+
+Handle 0x008F, DMI type 8, 9 bytes
+0000: 08 09 8F 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: RGB_HEADER
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x0090, DMI type 8, 9 bytes
+0000: 08 09 90 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: ADD_GEN2_1
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x0091, DMI type 8, 9 bytes
+0000: 08 09 91 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: COM_DEBUG
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x0092, DMI type 8, 9 bytes
+0000: 08 09 92 00 01 FF 02 00 10
+
+Port Connector Information
+	Internal Reference Designator: USB_411
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: USB
+
+Handle 0x0093, DMI type 8, 9 bytes
+0000: 08 09 93 00 01 FF 02 00 10
+
+Port Connector Information
+	Internal Reference Designator: USB_78
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: USB
+
+Handle 0x0094, DMI type 8, 9 bytes
+0000: 08 09 94 00 01 FF 02 00 10
+
+Port Connector Information
+	Internal Reference Designator: U32G1_E12
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: USB
+
+Handle 0x0095, DMI type 8, 9 bytes
+0000: 08 09 95 00 01 FF 02 00 23
+
+Port Connector Information
+	Internal Reference Designator: TB(USB4)_HEADER
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: <OUT OF SPEC>
+
+Handle 0x0096, DMI type 8, 9 bytes
+0000: 08 09 96 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: PANEL
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x0097, DMI type 8, 9 bytes
+0000: 08 09 97 00 01 22 02 00 20
+
+Port Connector Information
+	Internal Reference Designator: SATA6G_1
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x0098, DMI type 8, 9 bytes
+0000: 08 09 98 00 01 22 02 00 20
+
+Port Connector Information
+	Internal Reference Designator: SATA6G_2
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x0099, DMI type 8, 9 bytes
+0000: 08 09 99 00 01 22 02 00 20
+
+Port Connector Information
+	Internal Reference Designator: SATA6G_3
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x009A, DMI type 8, 9 bytes
+0000: 08 09 9A 00 01 22 02 00 20
+
+Port Connector Information
+	Internal Reference Designator: SATA6G_4
+	Internal Connector Type: SAS/SATA Plug Receptacle
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: SATA
+
+Handle 0x009B, DMI type 8, 9 bytes
+0000: 08 09 9B 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: ADD_GEN2_2
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x009C, DMI type 8, 9 bytes
+0000: 08 09 9C 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: ADD_GEN2_3
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x009D, DMI type 8, 9 bytes
+0000: 08 09 9D 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: CPU_FAN
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x009E, DMI type 8, 9 bytes
+0000: 08 09 9E 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: CPU_OPT
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x009F, DMI type 8, 9 bytes
+0000: 08 09 9F 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: CHA_FAN1
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A0, DMI type 8, 9 bytes
+0000: 08 09 A0 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: CHA_FAN2
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A1, DMI type 8, 9 bytes
+0000: 08 09 A1 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: CHA_FAN3
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A2, DMI type 8, 9 bytes
+0000: 08 09 A2 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: AIO_PUMP
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A3, DMI type 8, 9 bytes
+0000: 08 09 A3 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: ATX_12V_1
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A4, DMI type 8, 9 bytes
+0000: 08 09 A4 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: ATX_12V_2
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A5, DMI type 8, 9 bytes
+0000: 08 09 A5 00 01 FF 02 00 FF
+
+Port Connector Information
+	Internal Reference Designator: ATX_PWR
+	Internal Connector Type: Other
+	External Reference Designator: None
+	External Connector Type: None
+	Port Type: Other
+
+Handle 0x00A6, DMI type 9, 24 bytes
+0000: 09 18 A6 00 01 C3 0D 03 04 00 00 04 09 00 00 00
+0010: 08 00 00 00 00 00 00 00
+
+System Slot Information
+	Designation: PCIEx16(G5)
+	Type: x16 PCI Express 5 x16
+	Current Usage: Available
+	Length: Long
+	ID: 0
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+		PCIe slot bifurcation is supported
+	Bus Address: 0000:00:01.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x00A7, DMI type 9, 24 bytes
+0000: 09 18 A7 00 01 B9 08 03 03 01 00 04 01 00 00 00
+0010: E8 00 00 00 00 00 00 00
+
+System Slot Information
+	Designation: PCIEX1(G4)
+	Type: x1 PCI Express 4 x1
+	Current Usage: Available
+	Length: Short
+	ID: 1
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1d.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x00A8, DMI type 9, 24 bytes
+0000: 09 18 A8 00 01 BD 0A 03 04 02 00 04 01 00 00 00
+0010: E4 00 00 00 00 00 00 00
+
+System Slot Information
+	Designation: AirPort
+	Type: x4 PCI Express 4 x16
+	Current Usage: Available
+	Length: Long
+	ID: 2
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1c.4
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x00A9, DMI type 9, 24 bytes
+0000: 09 18 A9 00 01 17 0A 03 03 03 00 04 01 00 00 00
+0010: 30 00 00 00 00 00 00 00
+
+System Slot Information
+	Designation: M.2
+	Type: x4 M.2 Socket 3
+	Current Usage: Available
+	Length: Short
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:06.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x00AA, DMI type 9, 24 bytes
+0000: 09 18 AA 00 01 17 0A 03 03 04 00 04 01 00 00 00
+0010: D0 00 00 00 00 00 00 00
+
+System Slot Information
+	Designation: M.2_2
+	Type: x4 M.2 Socket 3
+	Current Usage: Available
+	Length: Short
+	Characteristics:
+		3.3 V is provided
+		PME signal is supported
+	Bus Address: 0000:00:1a.0
+	Data Bus Width: 0
+	Peer Devices: 0
+	Height: Not applicable
+
+Handle 0x00AB, DMI type 16, 23 bytes
+0000: 10 17 AB 00 03 03 03 00 00 00 10 FF FF 04 00 00
+0010: 00 00 00 00 00 00 00
+
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 256 GB
+	Error Information Handle: No Error
+	Number Of Devices: 4
+
+Handle 0x00AC, DMI type 19, 31 bytes
+0000: 13 1F AC 00 00 00 00 00 FF FF FF 03 AB 00 04 00
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 64 GB
+	Physical Array Handle: 0x00AB
+	Partition Width: 4
+
+Handle 0x00AD, DMI type 17, 92 bytes
+0000: 11 5C AD 00 AB 00 FF FF 40 00 40 00 00 40 09 00
+0010: 01 02 22 80 00 C8 19 03 04 05 06 01 00 00 00 00
+0020: C8 19 4C 04 78 05 4C 04 00 00 00 00 00 00 00 00
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0050: 00 00 00 00 00 00 00 00 00 00 00 00
+
+Memory Device
+	Array Handle: 0x00AB
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: Controller0-DIMM0
+	Bank Locator: BANK 0
+	Type: DDR5
+	Type Detail: Synchronous
+	Speed: 6600 MT/s
+	Manufacturer: Corsair
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: CMP64GX5M4B6400C32
+	Rank: 1
+	Configured Memory Speed: 6600 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.4 V
+	Configured Voltage: 1.1 V
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x00AE, DMI type 20, 35 bytes
+0000: 14 23 AE 00 00 00 00 00 FF FF FF 00 AD 00 AC 00
+0010: FF 01 02 00 00 00 00 00 00 00 00 00 00 00 00 00
+0020: 00 00 00
+
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x003FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x00AD
+	Memory Array Mapped Address Handle: 0x00AC
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x00AF, DMI type 17, 92 bytes
+0000: 11 5C AF 00 AB 00 FF FF 40 00 40 00 00 40 09 00
+0010: 01 02 22 80 00 C8 19 03 04 05 06 01 00 00 00 00
+0020: C8 19 4C 04 78 05 4C 04 00 00 00 00 00 00 00 00
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0050: 00 00 00 00 00 00 00 00 00 00 00 00
+
+Memory Device
+	Array Handle: 0x00AB
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: Controller0-DIMM1
+	Bank Locator: BANK 0
+	Type: DDR5
+	Type Detail: Synchronous
+	Speed: 6600 MT/s
+	Manufacturer: Corsair
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: CMP64GX5M4B6400C32
+	Rank: 1
+	Configured Memory Speed: 6600 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.4 V
+	Configured Voltage: 1.1 V
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x00B0, DMI type 20, 35 bytes
+0000: 14 23 B0 00 00 00 00 01 FF FF FF 01 AF 00 AC 00
+0010: FF 01 02 00 00 00 00 00 00 00 00 00 00 00 00 00
+0020: 00 00 00
+
+Memory Device Mapped Address
+	Starting Address: 0x00400000000
+	Ending Address: 0x007FFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x00AF
+	Memory Array Mapped Address Handle: 0x00AC
+	Partition Row Position: Unknown
+	Interleave Position: 1
+	Interleaved Data Depth: 2
+
+Handle 0x00B1, DMI type 17, 92 bytes
+0000: 11 5C B1 00 AB 00 FF FF 40 00 40 00 00 40 09 00
+0010: 01 02 22 80 00 C8 19 03 04 05 06 01 00 00 00 00
+0020: C8 19 4C 04 78 05 4C 04 00 00 00 00 00 00 00 00
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0050: 00 00 00 00 00 00 00 00 00 00 00 00
+
+Memory Device
+	Array Handle: 0x00AB
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: Controller1-DIMM0
+	Bank Locator: BANK 0
+	Type: DDR5
+	Type Detail: Synchronous
+	Speed: 6600 MT/s
+	Manufacturer: Corsair
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: CMP64GX5M4B6400C32
+	Rank: 1
+	Configured Memory Speed: 6600 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.4 V
+	Configured Voltage: 1.1 V
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x00B2, DMI type 20, 35 bytes
+0000: 14 23 B2 00 00 00 00 02 FF FF FF 02 B1 00 AC 00
+0010: FF 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00
+0020: 00 00 00
+
+Memory Device Mapped Address
+	Starting Address: 0x00800000000
+	Ending Address: 0x00BFFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x00B1
+	Memory Array Mapped Address Handle: 0x00AC
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x00B3, DMI type 17, 92 bytes
+0000: 11 5C B3 00 AB 00 FF FF 40 00 40 00 00 40 09 00
+0010: 01 02 22 80 00 C8 19 03 04 05 06 01 00 00 00 00
+0020: C8 19 4C 04 78 05 4C 04 00 00 00 00 00 00 00 00
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0050: 00 00 00 00 00 00 00 00 00 00 00 00
+
+Memory Device
+	Array Handle: 0x00AB
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 16 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: Controller1-DIMM1
+	Bank Locator: BANK 0
+	Type: DDR5
+	Type Detail: Synchronous
+	Speed: 6600 MT/s
+	Manufacturer: Corsair
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: CMP64GX5M4B6400C32
+	Rank: 1
+	Configured Memory Speed: 6600 MT/s
+	Minimum Voltage: 1.1 V
+	Maximum Voltage: 1.4 V
+	Configured Voltage: 1.1 V
+	Memory Technology: <OUT OF SPEC>
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Unknown
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x00B4, DMI type 20, 35 bytes
+0000: 14 23 B4 00 00 00 00 03 FF FF FF 03 B3 00 AC 00
+0010: FF 02 02 00 00 00 00 00 00 00 00 00 00 00 00 00
+0020: 00 00 00
+
+Memory Device Mapped Address
+	Starting Address: 0x00C00000000
+	Ending Address: 0x00FFFFFFFFF
+	Range Size: 16 GB
+	Physical Device Handle: 0x00B3
+	Memory Array Mapped Address Handle: 0x00AC
+	Partition Row Position: Unknown
+	Interleave Position: 2
+	Interleaved Data Depth: 2
+
+Handle 0x0019, DMI type 32, 11 bytes
+0000: 20 0B 19 00 00 00 00 00 00 00 00
+
+System Boot Information
+	Status: No errors detected
+
+Handle 0x0029, DMI type 131, 8 bytes
+0000: 83 08 29 00 05 06 00 00
+
+Apple specific Processor Type
+	CPU: 0x0605
+
+Handle 0x0027, DMI type 128, 96 bytes
+0000: 80 60 27 00 00 00 00 00 66 F0 AF FD 7F FF FF FF
+0010: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0020: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0030: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0040: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+0050: 00 00 00 00 00 00 00 00 08 00 00 00 08 00 00 00
+
+Apple specific FirmwareVolume
+	FirmwareFeatures: 0xFDAFF066
+	FirmwareFeaturesMask: 0xFFFFFF7F
+
+Handle 0x002B, DMI type 133, 12 bytes
+0000: 85 0C 2B 00 00 00 00 00 E8 81 F3 55
+
+Apple specific PlatformFeature
+	PlatformFeature: 0x00000000
+
+Handle 0x0026, DMI type 127, 4 bytes
+0000: 7F 04 26 00
+
+End Of Table
