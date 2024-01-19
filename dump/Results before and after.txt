@@ -1,0 +1,26 @@
+Results before CPUFriend with Intel XMP, ASUS AI Tweak, -ctrsmt boot arg for CpuTopologyRebuild.kext
+
+Cinebench 2024 Results
+GPU: 9148 pts
+CPU (Multi Core): 1401 pts
+CPU (Single Core): 91 pts
+MP Ratio: 15.44x
+
+Geekbench 6 Results
+Single-Core: 1620
+Multi-Core: 9872
+GPU (Metal): 240605
+GPU (OpenCL): 124687
+
+
+AFTER CPUFRIEND
+
+Geekbench 6 Results
+Single-Core: 1755
+Multi-Core: 21357
+
+
+
+
+
+Fun fact: Changing the RAM frequency from 3200MHz to 6600MHz increases the Metal score by 10,000!
