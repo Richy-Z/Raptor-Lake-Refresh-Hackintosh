@@ -1,5 +1,7 @@
 # 🦅 Raptor Lake Refresh Hackintosh with OpenCore
-An OpenCore EFI configured for my personal Raptor Lake Refresh (Intel 14th Generation) system.
+An OpenCore EFI (and GUide?) configured for my personal Raptor Lake Refresh (Intel 14th Generation) system.
+
+I decided to document it fully and in the most understandable way as for some reason actual guides for this odd platform are either unclear, hard to find, or behind a very stupid paywall. (I'm looking at you, Luchina Gabriel... its always these youtubers)
 
 This was quite a pleasant journey and a slight deviation from the ✨ *smooth hacks* ✨ I previously built on widely supported hardware such as the Intel Core i7-10700KF and the B460 motherbooard chipset. That being said, I really enjoyed the challenge of researching and delving deep into my own hardware (and Apple's) in order to get the smoothest, fastest, and most Apple-like experience as an end result.
 

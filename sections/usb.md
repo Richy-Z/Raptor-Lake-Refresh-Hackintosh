@@ -1,0 +1,2 @@
+# 🔌 USB Mapping
+Mapping USB on my motherboard was absolute HELL. I've noticed that a few months ago a new BIOS build was released which completely altered the original USB map, and the new configuration is ***really, really weird***.
