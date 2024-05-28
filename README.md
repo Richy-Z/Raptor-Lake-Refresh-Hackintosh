@@ -19,10 +19,10 @@ In the initial `README.md` file (December 2023 - January 2024), I said this:
 With the June 2024 revisit of this project, this Hackintosh is no longer a fluke nor a message sent from God. 👼 I know every bit of how and why this hack works. 🤓 Woo!
 
 ## 😈 Hackintosh Information
-| | |
-|-|-|
-| OpenCore Version | `1.0.0` |
-| BIOS Version | `1646 20/03/2024` |
+| Category         | Description               |
+|------------------|---------------------------|
+| OpenCore Version | `1.0.0`                   |
+| BIOS Version     | `Build 1646 (20/03/2024)` |
 
 ## 🖥️ Specifications
 | Component | Name | Key Information | Hackintosh Notes | Hardware Comments |
