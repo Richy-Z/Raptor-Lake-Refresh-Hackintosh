@@ -7,7 +7,7 @@ This was quite a pleasant journey and a slight deviation from the ✨ *smooth ha
 
 ℹ️ A "final" configuration does not mean that this repository will stop receiving updates. It is simply an indicator of the configuration working optimally and smoothly, providing the best Apple-like experience, and with horrendous bugs patched out and no drastic instability issues that affect day to day use of the hack.
 
-### 🐣 The May 2024 revisit of this project
+### 🐣 The June 2024 revisit of this project
 I initially started this project in December of 2023 and possibly used the Hackintosh as a daily driver until around January 2024. I decided to get a taste of Linux again to see how much Wine improved and I was pleasantly surprised! However the lack of support for Adobe products such as Photoshop (and maybe even Roblox purposefully blocking Wine💀) has prompted me to regrettably install the dreaded Windows 11 again.
 
 So I restarted this project in May 2024 to get a fresh taste of macOS again! This time though, Sonoma shall be the chosen one. I specifically stayed on Ventura last time because that is the last version of macOS which supports the `Broadcom BCM94360CD` chip present in my Fenvi T919 card. However, this time I *will* be installing Sonoma because I realised that I was actually missing out on certain software features present in CrossOver. Plus, I don't really care about WiFi anyways since this is a desktop and I use ethernet anyways.
@@ -16,7 +16,7 @@ In the initial `README.md` file (December 2023 - January 2024), I said this:
 > After I changed an unknown BIOS setting or something in config.plist, it randomly decided to boot into the macOS Installer instead of kernel panicking. I was so relieved and surprised that I ended up regaining faith in God and started praying - like literally...
 >> "Thank You God for such a blessed day!"
 
-With the May 2024 revisit of this project, this Hackintosh is no longer a fluke nor a message sent from God. 👼 I know every bit of how and why this hack works. 🤓 Woo!
+With the June 2024 revisit of this project, this Hackintosh is no longer a fluke nor a message sent from God. 👼 I know every bit of how and why this hack works. 🤓 Woo!
 
 ## 🖥️ Specifications
 | Component | Name | Key Information | Hackintosh Notes | Hardware Comments |
@@ -35,3 +35,12 @@ With the May 2024 revisit of this project, this Hackintosh is no longer a fluke 
 | 🪭 Case Fans | [Corsair iCUE AR120 Digital RGB](https://www.corsair.com/uk/en/p/120mm-fans/co-9050167-ww/icue-ar120-digital-rgb-120mm-pwm-fan-triple-pack-co-9050167-ww#tab-techspecs) | 59 CFM, 120mm | This is controlled by the Corsair iCUE Commander Core XT, so you won't be able to control it either from macOS. | They look pretty in the case and circulate air optimally. 🧊 |
 | ⛑️ Case | [Asus Prime AP201](https://www.asus.com/uk/motherboards-components/gaming-cases/prime/asus-prime-ap201-tempered-glass-microatx-case/) | microATX, Mini Tower |   | Really easy to work with, given its small size. 👏🏻 |
 | ⚡️ Power Supply | [Corsair HX1000 Platinum](https://www.corsair.com/uk/en/p/psu/cp-9020139-uk/hx-series-hx1000-1000-watt-80-plus-platinum-certified-fully-modular-psu-uk-cp-9020139-uk) | 1000W, Fully modular |   | Really efficient and powerful. 🔌 |
+
+## 🤔 Thinking about Hackintoshes...
+For many years, Hackintoshing has been a great art of tinkering with your system, modifying stuff, etc, just to get Apple software on non-Apple hardware. And although hackintoshing has been absolutely amazing, it has been clear that it has been dying a slow death over the past few years since the introduction of Apple Silicon.
+
+Although raw performance is almost always better than real Apple products, especially with this system, it actually just seems to be slower than the "real deal" (Apple) regardless. This is because Apple has had almost 4 years to work on, improve and optimise macOS for their own silicon and the effort has very clearly paid off.
+
+Now, its important to mention that Hackintoshing actually comes at a very slight performance cost - or at least with this system. I seem to lose 200-300 points in single core in Geekbench on macOS when compared to Windows and 3,000 points in multi-core testing between macOS and Windows. Additionally OpenCL is a lot faster on Windows than on macOS with the Geekbench. Granted, some of these performance costs are a bit negligible in daily use, but the limitations of the Intel platform on macOS become apparent once you delve a bit deeper.
+
+macOS Developers have moved on and almost completely abandoned Intel as a platform all together. For example, Crossover does not support DirectX 12 applications on Intel, and it is limited to Apple Silicon only. (Although tbh, the CrossOver team isn't to blame here - it's actually Apple to blame for GPTK... but anyways). Virtualisation platforms have also seen abandonment but lets not really dwindle from the main point. The point I'm trying to make is that the ***feel*** of macOS simply being fast and amazing isn't there when you're not using Apple Silicon. The performance cost being so negligible doesnt make this feeling for macOS' responsiveness and just "niceness" in general make sense.
