@@ -57,6 +57,8 @@ For some reason I thought that disabling the ASMedia Controller in the BIOS woul
 ## Mapping attempt 3 - Proper mapping
 *omittable* - Can be completely ignored and not mapped due to the limited functions it provides within macOS. Good for freeing up the limited amount of ports.
 
+----------
+
 ### 1. Miscellaneous personality detection (Internal software ports)
 **Intel**
 
@@ -67,6 +69,8 @@ For some reason I thought that disabling the ASMedia Controller in the BIOS woul
 8 - Type 255, Fenvi T919 WiFi & Bluetooth
 
 *omittable* 11 - Type 255, Corsair iCUE Commander Core
+
+----------
 
 ### 2. USB 3 / 4 Personality Detection
 **ASMedia**
@@ -79,9 +83,9 @@ For some reason I thought that disabling the ASMedia Controller in the BIOS woul
 
 **Intel**
 
-18 - Type C without switch, Case Type C, Companion to 19
+18 - Type 10, Case Type C, Companion to 19
 
-19 - Type C without switch, Case Type C, Companion to 18
+19 - Type 10, Case Type C, Companion to 18
 
 25 - Type 3, Case Left USB 3
 
@@ -93,11 +97,13 @@ For some reason I thought that disabling the ASMedia Controller in the BIOS woul
 
 24 - Type 3, Motherboard Middle USB 3 5G
 
-17 - Type C with switch, Motherboard Middle Type C 20G
+17 - Type 9, Motherboard Middle Type C 20G
 
 25 - Type 3, Motherboard Bottom USB 3 5G Left
 
 25 - Type 3, Motherboard Bottom USB 3 5G Right
+
+----------
 
 ### 3. USB 2 Compatibility Personality Detection
 **ASMedia**
@@ -108,7 +114,7 @@ For some reason I thought that disabling the ASMedia Controller in the BIOS woul
 
 **Intel**
 
-3 - Type C with switch, Case Type C
+3 - Type 9, Case Type C
 
 - Remember that although this is the USB 2 compatibility personality of the Type C port on my case, it must still be marked as a regular Type C with switch (USB 3), and not Type C USB 2.0 only.
 
@@ -118,13 +124,15 @@ For some reason I thought that disabling the ASMedia Controller in the BIOS woul
 
 9 - Type 3, Motherboard Middle USB 3 5G
 
-1 - Type C with switch, Motherboard Middle Type C 20G
+1 - Type 9, Motherboard Middle Type C 20G
 
 10 - Type 3, Motherboard Bottom USB 3 5G Left
 
 10 - Type 3, Motherboard Bottom USB 3 5G Right
 
 - Remember that although this is the USB 2 compatibility personality of the Type C port on my case, it must still be marked as a regular Type C with switch (USB 3), and not Type C USB 2.0 only.
+
+----------
 
 ### 4. USB Controller Load Balancing Detection
 After a BIOS update, it looks like Asus has implemented USB controller load balancing for my motherboard which essentially distributes the load of MANY (literally all USB ports plugged in) across various personalities and hubs, etc, notably ones that we didnt even discover in steps 2 or 3.

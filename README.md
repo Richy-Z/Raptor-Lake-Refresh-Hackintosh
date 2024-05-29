@@ -24,7 +24,7 @@ With the June 2024 revisit of this project, this Hackintosh is no longer a fluke
 | Category         | Description               |
 |------------------|---------------------------|
 | OpenCore Version | `1.0.0`                   |
-| BIOS Version     | `Build 1646 (20/03/2024)` |
+| BIOS Version     | `Build 1656 (18/04/2024)` |
 
 ## 🖥️ Specifications
 | Component | Name | Key Information | Hackintosh Notes | Hardware Comments |
