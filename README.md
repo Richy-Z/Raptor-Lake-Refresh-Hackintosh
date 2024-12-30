@@ -120,7 +120,4 @@ In my case, `VarOffset` was `0x44`. This meant that I had to use the following c
 ```grub
 setup_var_cv CpuSetup 0x44 0x01 0x00
 ```
-The command above writes one byte of information, `0x00`, to offset `0x44` in `CpuSetup`.
-
-## 🍉 Numelon Softworks (NSC Information)
-The contents of this GitHub repository adhere to the [Numelon Standardisation Convention](https://numelon.com/site-landing/?site=nsc.numelon.com).
+The command above writes `0x00` (of length `0x01` or 1 byte) to offset `0x44` in `CpuSetup`.
