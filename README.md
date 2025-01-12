@@ -31,6 +31,7 @@ Because of my lack of knowledge on completely unsupported systems with OpenCore 
 
 ## ⚙️ BIOS Options
 ### ❌ Disable
+- VT-d (VT for Direct I/O), or enable the `DisableIoMapper` quirk if you cannot disable the setting in BIOS.
 - Fast Boot
 - Secure Boot
     - **Secure Boot Mode:** Standard
@@ -42,8 +43,7 @@ Because of my lack of knowledge on completely unsupported systems with OpenCore 
   - This doesn't have to stay disabled - only for Post-Install Configuration.
 
 ### ✅ Enable
-- VT-d and VT-x (The `DisableIoMapper` quirk **does not** have to be enabled. In fact, disabling VT-d or enabling `DisableIoMapper` actually causes issues.)
-  - A long time ago (almost a decade ago), when Hackintoshes were a new thing, someone said that VT-d should be disabled. This is no longer the case however and macOS actually requires it! This false piece of information has stayed with the community, however.
+- VT-x (my specific motherboard didn't have an explicit option to enable this)
 - Above 4G Decoding
   - Resize BAR Support will become available - turn it on too.
 - Hyper-Threading
