@@ -18,9 +18,3 @@ AFTER CPUFRIEND
 Geekbench 6 Results
 Single-Core: 1755
 Multi-Core: 21357
-
-
-
-
-
-Fun fact: Changing the RAM frequency from 3200MHz to 6600MHz increases the Metal score by 10,000!
