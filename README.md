@@ -1,4 +1,5 @@
 # 🦅 Raptor Lake Refresh Hackintosh with OpenCore
+
 An OpenCore EFI configured for my personal Raptor Lake Refresh (Intel 14th Generation) system.
 
 This Hackintosh is currently a fluke - I don't have much of an idea of how or why this hack even works.
@@ -11,40 +12,44 @@ Because of my lack of knowledge on completely unsupported systems with OpenCore 
 **⚠️⚠️ I am currently in the process of perfecting this Hackintosh. This repo will be updated later with everything that I've done, and I'll explain stuff when I create the final configuration (and learn more about it).**
 
 ## 🖥️ Specifications
+
 | Component | Name | Key Information | Hackintosh Notes | Hardware Comments |
 | --------- | ---- | --------------- | ---------------- | ----------------- |
-| 🌍 Motherboard | [ASUS TUF Gaming B760M-Plus](https://www.asus.com/uk/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus/techspec/) | B760 Chipset, ALC897, RTL8125 |   | Lovely motherboard! 😍 |
-| 🧠 Processor | [Intel Core i9-14900KF](https://ark.intel.com/content/www/us/en/ark/products/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz.html) | 24 Cores [(8P + 16E)](https://www.intel.com/content/www/us/en/gaming/resources/how-hybrid-design-works.html), 32 Threads| Raptor Lake is not natively supported. Advanced configuration required. | Really powerful - Outperforms M2 Ultra and M3 Max even with non-native support! 💪🏻 |
-| 👀 Graphics | [AMD Radeon RX 6900 XT Gaming Z Trio 16GB](https://www.msi.com/Graphics-Card/Radeon-RX-6900-XT-GAMING-Z-TRIO-16G/Specification) | MSI XTXH Variant | Only XTX is supported in macOS - XTXH is not. The device ID has to be spoofed. | Very powerful graphics - Outperforms above. 🤓 |
-| 💭 Memory | [Corsair Dominator Titanium RGB 64GB](https://www.corsair.com/uk/en/p/memory/cmp64gx5m4b6400c32/dominator-titanium-rgb-4x16gb-ddr5-dram-6400mt-s-cl32-intel-xmp-memory-kit-cmp64gx5m4b6400c32#tab-techspecs) | DDR5 6400MHz, 4x16GB Configuration, Intel XMP | macOS does not recognise that it is DDR5 - this is purely cosmetic and doesnt affect anything. Also, you won't be able to control RGB from macOS. | Lovely colours with RGB! 🌈 |
-| 💾 Storage | [WD_BLACK SN850X 2TB with Heatsink](https://www.westerndigital.com/en-gb/products/internal-drives/wd-black-sn850x-nvme-ssd?sku=WDS200T2XHE) | NVMe SSD, WD In-house controller | I'm not sure if this requires NVMeFix.kext as Apple and Western Digital go well together. | Really fast - up to 7,300MB/s. 🏃🏻💨 |
-| 🛜 Wireless | [Fenvi T-919](https://fenvi.com/product_detail_16.html) | Broadcom BCM94360CD | Has native support in macOS up to Ventura | Just a regular card 👍🏻 |
+| 🌍 Motherboard | [ASUS TUF Gaming B760M-Plus][motherboard] | B760 Chipset, ALC897, RTL8125 |   | Lovely motherboard! 😍 |
+| 🧠 Processor | [Intel Core i9-14900KF][cpu] | 24 Cores [(8P + 16E)][1], 32 Threads| Raptor Lake is not natively supported. Advanced configuration required. | Really powerful - Outperforms M2 Ultra and M3 Max even with non-native support! 💪🏻 |
+| 👀 Graphics | [AMD Radeon RX 6900 XT Gaming Z Trio 16GB][gpu] | MSI XTXH Variant | Only XTX is supported in macOS - XTXH is not. Either Device ID must be spoofed or a kext used. | Very powerful graphics - Outperforms above. 🤓 |
+| 💭 Memory | [Corsair Dominator Titanium RGB 64GB][ram] | DDR5 6400MHz, 4x16GB Configuration, Intel XMP | macOS does not recognise that it is DDR5 - this is purely cosmetic and doesnt affect anything. Also, you won't be able to control RGB from macOS. | Lovely colours with RGB! 🌈 |
+| 💾 Storage | [WD_BLACK SN850X 2TB with Heatsink][ssd] | NVMe SSD, WD In-house controller | Does not require NVMeFix.kext. | Really fast - up to 7,300MB/s. 🏃🏻💨 |
+| 🛜 Wireless | [Fenvi T-919][wireless] | Broadcom BCM94360CD | Has native support in macOS up to Ventura | Just a regular card 👍🏻 |
 
 ### Other components
+
 | Component | Name | Key Information | Hackintosh Notes | Hardware Comments |
 | --------- | ---- | --------------- | ---------------- | ----------------- |
-| ❄️ CPU Cooler | [Corsair iCUE H100i ELITE LCD XT](https://www.corsair.com/uk/en/p/cpu-coolers/cw-9060074-ww/icue-h100i-elite-lcd-xt-display-liquid-cpu-cooler) | AIO Liquid Cooler, 65.57 CFM, 240mm Radiator | You will not be able to control it from within macOS. Set your settings in Windows and leave it alone. | Keeps the CPU very cool. Idles ranging from 26℃ to 29℃. ☃️ |
-| 🪭 Case Fans | [Corsair iCUE AR120 Digital RGB](https://www.corsair.com/uk/en/p/120mm-fans/co-9050167-ww/icue-ar120-digital-rgb-120mm-pwm-fan-triple-pack-co-9050167-ww#tab-techspecs) | 59 CFM, 120mm | This is controlled by the Corsair iCUE Commander Core XT, so you won't be able to control it either from macOS. | They look pretty in the case and circulate air optimally. 🧊 |
-| ⛑️ Case | [Asus Prime AP201](https://www.asus.com/uk/motherboards-components/gaming-cases/prime/asus-prime-ap201-tempered-glass-microatx-case/) | microATX, Mini Tower |   | Really easy to work with, given its small size. 👏🏻 |
-| ⚡️ Power Supply | [Corsair HX1000 Platinum](https://www.corsair.com/uk/en/p/psu/cp-9020139-uk/hx-series-hx1000-1000-watt-80-plus-platinum-certified-fully-modular-psu-uk-cp-9020139-uk) | 1000W, Fully modular |   | Really efficient and powerful. 🔌 |
-
+| ❄️ CPU Cooler | [Corsair iCUE H100i ELITE LCD XT][cooler] | AIO Liquid Cooler, 65.57 CFM, 240mm Radiator | You will not be able to control it from within macOS. Set your settings in Windows and leave it alone. | Keeps the CPU very cool. Idles ranging from 26℃ to 29℃. ☃️ |
+| 🪭 Case Fans | [Corsair iCUE AR120 Digital RGB][fans] | 59 CFM, 120mm | This is controlled by the Corsair iCUE Commander Core XT, so you won't be able to control it either from macOS. | They look pretty in the case and circulate air optimally. 🧊 |
+| ⛑️ Case | [Asus Prime AP201][case] | microATX, Mini Tower |   | Really easy to work with, given its small size. 👏🏻 |
+| ⚡️ Power Supply | [Corsair HX1000 Platinum][psu] | 1000W, Fully modular |   | Really efficient and powerful. 🔌 |
 
 ## ⚙️ BIOS Options
+
 ### ❌ Disable
+
 - Fast Boot
 - Secure Boot
-    - **Secure Boot Mode:** Standard
-    - **Secure Boot State:** Setup
-    - Key management will turn off with these Secure Boot settings, however, this is required.
+  - **Secure Boot Mode:** Standard
+  - **Secure Boot State:** Setup
+  - Key management will turn off with these Secure Boot settings, however, this is required.
 - Compatibility Support Module (CSM)
 - Discrete Thunderbolt Support
 - UEFI Variable Protection
   - This doesn't have to stay disabled - only for Post-Install Configuration.
 
 ### ✅ Enable
+
 - VT-x (my specific motherboard didn't have an explicit option to enable this)
 - VT-d (VT for Direct I/O)
-    - Contrary to typical belief with Hackintoshes, it is now somewhat recommended to actually have VT-d enabled so that macOS can use extra features and perform better, Monterey and later. This of course assumes that your DMAR table is patched to remove reserved memory regions. After patching, you may disable the VT-d related quirks like `DisableIoMapper` and enable VT-d in the BIOS.
+  - Contrary to typical belief with Hackintoshes, it is now somewhat recommended to actually have VT-d enabled so that macOS can use extra features and perform better, Monterey and later. This of course assumes that your DMAR table is patched to remove reserved memory regions. After patching, you may disable the VT-d related quirks like `DisableIoMapper` and enable VT-d in the BIOS.
 - Above 4G Decoding
   - Resize BAR Support will become available - turn it on too.
 - Hyper-Threading
@@ -53,6 +58,7 @@ Because of my lack of knowledge on completely unsupported systems with OpenCore 
   - Contrary to what the OpenCore Install Guide says, we will set this to "Other OS" to disable Microsoft Secure Boot which isn't required for macOS.
 
 ### ℹ️ Other BIOS Settings
+
 - Intel XMP
   - Intel XMP does not cause issues. This can be enabled to enhance the performance of your hack.
 - ASUS AI Tweaker (BIOS Automatic Overclocking)
@@ -60,20 +66,26 @@ Because of my lack of knowledge on completely unsupported systems with OpenCore 
   - *Where exactly is the AI in this lol? It's just a BIOS... I don't expect it to have any AI features. How would you as a BIOS Vendor even implement that, and furthermore, how would American Megatrends implement it lol?*
 
 ## 👀 Enabling support for the RX 6900 XT
+
 To be documented.
 
 ## 🧠 Fixing support for Raptor Lake (i9-14900KF)
+
 To be documented.
+
 - CPUFriend
 - Apple Industry Standard ProcessorType
   - PlatformInfo > Generic > ProcessorType
 - CFG Lock
 - Spoofing the Processor Name and Type
-  - NVRAM >> Add >> 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102
+  - NVRAM → Add → 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102
 
 ## 📜 config.plist Configuration
+
 To be further documented.
-### DeviceProperties >> GPU Path
+
+### DeviceProperties → GPU Path
+
 | Name      | Type   | Value                 |
 | --------- | ------ | --------------------- |
 | device-id | Data   | BF730000              |
@@ -89,7 +101,10 @@ I've also applied the same naming convention to the processor name, see below.
 
 Remember, this is PURELY COSMETIC! So naming here doesn't matter much. I'm just going for the ultimate Apple experience.
 
-### NVRAM >> Add >> 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102
+### NVRAM → Add → 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102
+
+Please also ensure that you add the values to `NVRAM → Delete` too.
+
 | Name       | Type             | Value                 |
 | ---------- | ---------------- | --------------------- |
 | revcpu     | Number (Integer) | 1                     |
@@ -101,8 +116,8 @@ As you can see here, I've applied the same naming convention to the CPU name as 
 
 ![Screenshot 2023-12-29 at 15 37 24](https://github.com/Richy-Z/Raptor-Lake-Refresh-Hackintosh/assets/64844585/cf292668-0b33-49f4-aaa7-1be959793cb9)
 
+### PlatformInfo → Generic
 
-### PlatformInfo >> Generic
 | Name          | Type   | Value  |
 | ------------- | ------ | ------ |
 | ProcessorType | Number | `3841` |
@@ -110,15 +125,31 @@ As you can see here, I've applied the same naming convention to the CPU name as 
 I initially did not know that ProcessorType had to be set manually in order to apply a custom CPU name. Or, more specifically and more likely, because I have an unsupported Raptor Lake Refresh CPU, OpenCore was failing to determine a [ProcessorType](https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Apple/IndustryStandard/AppleSmBios.h) so it defaulted to `0x00`, `AppleProcessorTypeUnknown` which I assume does not support CPU renaming. Hence, macOS was showing "3.18GHz Unknown" regardless of the CPU name I was attempting to set. The unknown will always be unknown!
 
 ## 🔐 Fixing CFG Lock on ASUS TUF Gaming B760M-Plus
+
 ❗️ **Be careful when modifying your BIOS directly. It can severely break your system!**
 
 ℹ️ UEFI Variable Protection must be disabled in the BIOS.
 
 After that, [instructions from the OpenCore Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) can be followed as-is.
 
-
 In my case, `VarOffset` was `0x44`. This meant that I had to use the following command in the [Modified GRUB Shell](https://github.com/datasone/grub-mod-setup_var):
+
 ```grub
 setup_var_cv CpuSetup 0x44 0x01 0x00
 ```
+
 The command above writes `0x00` (of length `0x01` or 1 byte) to offset `0x44` in `CpuSetup`.
+
+[motherboard]: https://www.asus.com/uk/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus/techspec/
+[cpu]: https://ark.intel.com/content/www/us/en/ark/products/236787/intel-core-i9-processor-14900kf-36m-cache-up-to-6-00-ghz.html
+[gpu]: https://www.msi.com/Graphics-Card/Radeon-RX-6900-XT-GAMING-Z-TRIO-16G/Specification
+[ram]: https://www.corsair.com/uk/en/p/memory/cmp64gx5m4b6400c32/dominator-titanium-rgb-4x16gb-ddr5-dram-6400mt-s-cl32-intel-xmp-memory-kit-cmp64gx5m4b6400c32#tab-techspecs
+[ssd]: https://www.westerndigital.com/en-gb/products/internal-drives/wd-black-sn850x-nvme-ssd?sku=WDS200T2XHE
+[wireless]: https://fenvi.com/product_detail_16.html
+
+[cooler]: https://www.corsair.com/uk/en/p/cpu-coolers/cw-9060074-ww/icue-h100i-elite-lcd-xt-display-liquid-cpu-cooler
+[fans]: https://www.corsair.com/uk/en/p/120mm-fans/co-9050167-ww/icue-ar120-digital-rgb-120mm-pwm-fan-triple-pack-co-9050167-ww#tab-techspecs
+[case]: https://www.asus.com/uk/motherboards-components/gaming-cases/prime/asus-prime-ap201-tempered-glass-microatx-case/
+[psu]: https://www.corsair.com/uk/en/p/psu/cp-9020139-uk/hx-series-hx1000-1000-watt-80-plus-platinum-certified-fully-modular-psu-uk-cp-9020139-uk
+
+[1]: https://www.intel.com/content/www/us/en/gaming/resources/how-hybrid-design-works.html
